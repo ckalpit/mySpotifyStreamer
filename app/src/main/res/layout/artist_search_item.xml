@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    cardView:cardUseCompatPadding="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/artist_search_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/placeholder.png"/>
+    <TextView
+        android:id="@+id/artist_search_name"
+        android:layout_toEndOf="@id/artist_search_image"
+        android:layout_toRightOf="@id/artist_search_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+  </RelativeLayout>
+</android.support.v7.widget.CardView>
